@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Catalog.Domain.Repositories
 {
-    public interface IItemRepository : IRepository
+    public interface IItemRepository
     {
         Task<IEnumerable<Item>> GetAsync();
         Task<Item> GetAsync(Guid id);
