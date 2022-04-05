@@ -8,6 +8,7 @@ namespace Catalog.Domain.Repositories
 {
     public interface IItemRepository
     {
+        IUnitOfWork UnitOfWork { get; }
         Task<IEnumerable<Item>> GetAsync();
         Task<Item> GetAsync(Guid id);
         Item Add(Item item);
