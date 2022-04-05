@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Catalog.Infrastructure.SchemaDefinitions
 {
-    internal class ItemEntitySchemaDefinition : IEntityTypeConfiguration<Item>
+    public class ItemEntitySchemaDefinition : IEntityTypeConfiguration<Item>
     {
         public void Configure(EntityTypeBuilder<Item> builder)
         {

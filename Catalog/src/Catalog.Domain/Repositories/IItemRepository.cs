@@ -12,5 +12,6 @@ namespace Catalog.Domain.Repositories
         Task<Item> GetAsync(Guid id);
         Item Add(Item item);
         Item Update(Item item);
+        Item Delete(Item item);
     }
 }

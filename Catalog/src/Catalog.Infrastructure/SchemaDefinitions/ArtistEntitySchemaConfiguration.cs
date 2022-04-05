@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Catalog.Infrastructure.SchemaDefinitions
 {
-    internal class ArtistEntitySchemaConfiguration : IEntityTypeConfiguration<Artist>
+    public class ArtistEntitySchemaConfiguration : IEntityTypeConfiguration<Artist>
     {
         public void Configure(EntityTypeBuilder<Artist> builder)
         {
