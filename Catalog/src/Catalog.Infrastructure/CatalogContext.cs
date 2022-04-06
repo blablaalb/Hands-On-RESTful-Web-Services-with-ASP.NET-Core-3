@@ -21,13 +21,13 @@ namespace Catalog.Infrastructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new ItemEntitySchemaDefinition());
             modelBuilder.ApplyConfiguration(new GenreEntitySchemaConfiguration());
             modelBuilder.ApplyConfiguration(new ArtistEntitySchemaConfiguration());
+            modelBuilder.ApplyConfiguration(new ItemEntitySchemaDefinition());
             base.OnModelCreating(modelBuilder);
         }
 
-        public async Task<bool> SaveEntitiesAsync(CancellationToken cancellationToken = default)
+        public async Task<bool> SaveEntitiesAsync(CancellationToken cancellationToken = default(CancellationToken))
         {
             await SaveChangesAsync(cancellationToken);
             return true;

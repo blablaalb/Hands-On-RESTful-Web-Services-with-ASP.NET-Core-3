@@ -32,7 +32,14 @@ namespace Catalog.Infrastructure.Repositories
 
         public async Task<Item> GetAsync(Guid id)
         {
-            var item = await _context.Items.AsNoTracking().Where(x => x.Id == id).Include(x => x.Genre).Include(x => x.Artist).FirstOrDefaultAsync();
+            var item = await _context.Items
+                .AsNoTracking()
+                .Where(x => x.Id == id)
+                .Include(x => x.Genre)
+                .Include(x => x.Artist)
+                .FirstOrDefaultAsync();
+            if (item == null) return null;
+            _context.Entry(item).State = EntityState.Detached;
             return item;
         }
 

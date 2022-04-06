@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Catalog.Infrastructure;
 using Microsoft.Extensions.Hosting;
+using Catalog.Domain.Repositories;
+using Catalog.Domain.Extensions;
 
 namespace Catalog.API
 {
@@ -20,7 +22,13 @@ namespace Catalog.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCatalogContext(Configuration.GetSection("DataSource:ConnectionString").Value);
+            services
+                .AddCatalogContext(Configuration.GetSection("DataSource:ConnectionString").Value)
+                .AddScoped<IItemRepository, IItemRepository>()
+                .AddMappers()
+                .AddSerfices()
+                .AddControllers()
+                .AddValidation();
             services.AddControllers();
         }
 

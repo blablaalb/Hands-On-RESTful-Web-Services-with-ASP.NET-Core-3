@@ -9,7 +9,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.23" />
-		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 		<PackageReference Include="Shouldly" Version="4.0.3" />
 		<PackageReference Include="xunit" Version="2.4.1" />
@@ -22,20 +22,11 @@
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
 		
-		<None Update="Data\artist.json">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
-		<None Update="Data\genre.json">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
-		<None Update="Data\item.json">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
-		
 	</ItemGroup>
 
 	<ItemGroup>
 	  <ProjectReference Include="..\..\src\Catalog.Infrastructure\Catalog.Infrastructure.csproj" />
+	  <ProjectReference Include="..\Catalog.Fixtures\Catalog.Fixtures.csproj" />
 	</ItemGroup>
 
 </Project>

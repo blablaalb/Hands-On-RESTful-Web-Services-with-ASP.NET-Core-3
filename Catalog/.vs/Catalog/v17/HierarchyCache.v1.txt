@@ -1,0 +1,269 @@
+﻿++Solution 'Catalog' ‎(6 of 6 projects)
+i:{00000000-0000-0000-0000-000000000000}:Catalog.sln
+++tests
+i:{00000000-0000-0000-0000-000000000000}:tests
+++Catalog.Infrastructure.Tests
+i:{3fde14a1-6d3d-4d64-a1ec-c494de15d6fc}:Catalog.Infrastructure.Tests
+++Dependencies
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:>2155
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:>2154
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:>2153
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:>906
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:>907
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:>2272
+++ItemRepositoryTests.cs
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.infrastructure.tests\itemrepositorytests.cs
+++Analyzers
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:analyzers
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:analyzers
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:analyzers
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:analyzers
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:analyzers
+++Frameworks
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:frameworks
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:frameworks
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:frameworks
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:frameworks
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:frameworks
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:frameworks
+++Packages
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:packages
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:packages
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:packages
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:packages
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:packages
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:packages
+++Projects
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:projects
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:projects
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:projects
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:projects
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:projects
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:c:\users\blablaalb\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.23\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:c:\users\blablaalb\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.23\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:c:\users\blablaalb\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.23\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:c:\users\blablaalb\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.23\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:c:\users\blablaalb\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.23\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++xunit.analyzers
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:c:\users\blablaalb\.nuget\packages\xunit.analyzers\0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:c:\users\blablaalb\.nuget\packages\xunit.analyzers\0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:c:\users\blablaalb\.nuget\packages\xunit.analyzers\0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll
+++Microsoft.NETCore.App
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.infrastructure.tests\microsoft.netcore.app
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.fixtures\microsoft.netcore.app
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.domain.tests\microsoft.netcore.app
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.api\microsoft.netcore.app
+++coverlet.collector (3.1.0)
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:>2313
+++Microsoft.EntityFrameworkCore.InMemory (3.1.23)
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:>2307
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:>2309
+++Microsoft.NET.Test.Sdk (16.11.0)
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:>2296
+++Newtonsoft.Json (13.0.1)
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:>2301
+++Shouldly (4.0.3)
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:>2291
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:>2297
+++xunit (2.4.1)
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:>2303
+++xunit.runner.visualstudio (2.4.3)
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:>2310
+++Catalog.Fixtures
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.fixtures\bin\debug\netcoreapp3.1\catalog.fixtures.dll
+i:{3fde14a1-6d3d-4d64-a1ec-c494de15d6fc}:Catalog.Fixtures
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.fixtures\bin\debug\netcoreapp3.1\catalog.fixtures.dll
+++Catalog.Infrastructure
+i:{06d51fbd-78ba-4ce9-b93c-95608477ecc5}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.infrastructure\bin\debug\netstandard2.1\catalog.infrastructure.dll
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.infrastructure\bin\debug\netstandard2.1\catalog.infrastructure.dll
+i:{288e82e5-f3b4-484d-b37a-9837c0c6c14f}:Catalog.Infrastructure
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.infrastructure\bin\debug\netstandard2.1\catalog.infrastructure.dll
+++Data
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.fixtures\data\
+++Extensions
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.fixtures\extensions\
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.api\extensions\
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\extensions\
+++ModelBuilderExtensions.cs
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.fixtures\extensions\modelbuilderextensions.cs
+++CatalogContextFactory.cs
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.fixtures\catalogcontextfactory.cs
+++TestCatalogContext.cs
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.fixtures\testcatalogcontext.cs
+++artist.json
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.fixtures\data\artist.json
+++genre.json
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.fixtures\data\genre.json
+++item.json
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.fixtures\data\item.json
+++coverlet.collector (1.2.0)
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:>2318
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:>2316
+++Microsoft.NET.Test.Sdk (16.5.0)
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:>2300
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:>2302
+++xunit (2.4.0)
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:>2305
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:>2306
+++xunit.runner.visualstudio (2.4.0)
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:>2314
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:>2311
+++Catalog.Domain
+i:{0d456da0-89c1-4920-b56f-23c3dab8d666}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\bin\debug\netstandard2.1\catalog.domain.dll
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\bin\debug\netstandard2.1\catalog.domain.dll
+i:{288e82e5-f3b4-484d-b37a-9837c0c6c14f}:Catalog.Domain
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\bin\debug\netstandard2.1\catalog.domain.dll
+++Catalog.Domain.Tests
+i:{3fde14a1-6d3d-4d64-a1ec-c494de15d6fc}:Catalog.Domain.Tests
+++Services
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.domain.tests\services\
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\services\
+++ItemServiceTests.cs
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.domain.tests\services\itemservicetests.cs
+++src
+i:{00000000-0000-0000-0000-000000000000}:src
+++Entities
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\entities\
+++Artist.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\entities\artist.cs
+++Genre.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\entities\genre.cs
+++Item.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\entities\item.cs
+++Price.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\entities\price.cs
+++Mappers
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\mappers\
+++ArtistMapper.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\mappers\artistmapper.cs
+++CatalogProfile.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\mappers\catalogprofile.cs
+++GenreMapper.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\mappers\genremapper.cs
+++IArtistMapper.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\mappers\iartistmapper.cs
+++IGenreMapper.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\mappers\igenremapper.cs
+++IItemMapper.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\mappers\iitemmapper.cs
+++ItemMapper.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\mappers\itemmapper.cs
+++Repositories
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\repositories\
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.infrastructure\repositories\
+++IItemRepository.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\repositories\iitemrepository.cs
+++IRepository.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\repositories\irepository.cs
+++IUnitOfWork.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\repositories\iunitofwork.cs
+++Requests
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\requests\
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.domain.tests\requests\
+++Item
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\requests\item\
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\responses\item\
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.domain.tests\requests\item\
+++Validators
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\requests\item\validators\
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.domain.tests\requests\item\validators\
+++AddItemRequestValidator.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\requests\item\validators\additemrequestvalidator.cs
+++AddItemRequest.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\requests\item\additemrequest.cs
+++DeleteItemRequest.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\requests\item\deleteitemrequest.cs
+++EditItemRequest.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\requests\item\edititemrequest.cs
+++GetItemRequest.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\requests\item\getitemrequest.cs
+++Responses
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\responses\
+++ArtistResponse.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\responses\item\artistresponse.cs
+++GenreResponse.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\responses\item\genreresponse.cs
+++ItemResponse.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\responses\item\itemresponse.cs
+++PriceResponse.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\responses\item\priceresponse.cs
+++IItemService.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\services\iitemservice.cs
+++ItemService.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\services\itemservice.cs
+++NETStandard.Library
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\netstandard.library
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.infrastructure\netstandard.library
+++AutoMapper (11.0.1)
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:>2298
+++FluentValidation (9.5.4)
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:>2390
+++FluentValidation.AspNetCore (8.6.3)
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:>2345
+++ItemRepository.cs
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.infrastructure\repositories\itemrepository.cs
+++SchemaDefinitions
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.infrastructure\schemadefinitions\
+++ArtistEntitySchemaConfiguration.cs
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.infrastructure\schemadefinitions\artistentityschemaconfiguration.cs
+++GenreEntitySchemaConfiguration.cs
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.infrastructure\schemadefinitions\genreentityschemaconfiguration.cs
+++ItemEntitySchemaDefinition.cs
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.infrastructure\schemadefinitions\itementityschemadefinition.cs
+++CatalogContext.cs
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.infrastructure\catalogcontext.cs
+++Microsoft.EntityFrameworkCore (3.1.23)
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:>2299
+++Microsoft.EntityFrameworkCore.SqlServer (3.1.23)
+i:{e5587295-928a-4565-b9a8-9eb1ca24796d}:>2304
+++Catalog.API
+i:{288e82e5-f3b4-484d-b37a-9837c0c6c14f}:Catalog.API
+++Connected Services 
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:>2273
+++Properties
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.api\properties\
+++Controllers
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.api\controllers\
+++Migrations
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.api\migrations\
+++appsettings.json
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.api\appsettings.json
+++Program.cs
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.api\program.cs
+++Startup.cs
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.api\startup.cs
+++No service dependencies discovered
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:>2274
+++launchSettings.json
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.api\properties\launchsettings.json
+++DatabaseExtensions.cs
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.api\extensions\databaseextensions.cs
+++20220329142403_InitMigration.cs
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.api\migrations\20220329142403_initmigration.cs
+++CatalogContextModelSnapshot.cs
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.api\migrations\catalogcontextmodelsnapshot.cs
+++appsettings.Development.json
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.api\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.App
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.api\microsoft.aspnetcore.app
+++Microsoft.EntityFrameworkCore.Design (3.1.23)
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:>2320
+++20220329142403_InitMigration.Designer.cs
+i:{71965528-5a2f-47eb-85e4-6f17eef36a3e}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.api\migrations\20220329142403_initmigration.designer.cs
+++AddItemRequestValidator - Copy.cs
+++EdotItemRequestValidator.cs
+++EditItemRequestValidator.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\requests\item\validators\edititemrequestvalidator.cs
+++NewFolder
+++AddItemRequestValidatorTests.cs
+i:{ed9e4359-d66d-4df6-ac13-3e410e68ad06}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\tests\catalog.domain.tests\requests\item\validators\additemrequestvalidatortests.cs
+++DependencyRegistration.cs
+i:{5c507370-d538-4406-98f1-c548fc5a67fa}:d:\.net-projects\hands-on restful web services with asp.net core 3\catalog\src\catalog.domain\extensions\dependencyregistration.cs
+++FluentValidation (8.6.3)

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Catalog.Infrastructure.Tests.Extensions
+namespace Catalog.Fixtures.Extensions
 {
     public static class ModelBuilderExtensions
     {
