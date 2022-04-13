@@ -1,5 +1,5 @@
 ﻿using Catalog.Domain.Entities;
-using Catalog.Domain.Requests;
+using Catalog.Domain.Requests.Item;
 using Catalog.Domain.Requests.Item.Validators;
 using FluentValidation.TestHelper;
 using System;

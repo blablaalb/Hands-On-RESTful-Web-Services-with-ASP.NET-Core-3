@@ -14,6 +14,8 @@ namespace Catalog.Infrastructure
     {
         public const string DEFAULT_SCHEMA = "catalog";
         public DbSet<Item> Items { get; set; }
+        public DbSet<Artist> Artists { get; set; }
+        public DbSet<Genre> Gengres { get; set; }
 
         public CatalogContext(DbContextOptions<CatalogContext> options): base(options)
         {
@@ -21,9 +23,9 @@ namespace Catalog.Infrastructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new GenreEntitySchemaConfiguration());
-            modelBuilder.ApplyConfiguration(new ArtistEntitySchemaConfiguration());
             modelBuilder.ApplyConfiguration(new ItemEntitySchemaDefinition());
+            modelBuilder.ApplyConfiguration(new ArtistEntitySchemaConfiguration());
+            modelBuilder.ApplyConfiguration(new GenreEntitySchemaConfiguration());
             base.OnModelCreating(modelBuilder);
         }
 

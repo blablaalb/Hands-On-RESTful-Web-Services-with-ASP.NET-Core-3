@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Catalog.Domain.Requests.Item
+namespace Catalog.Domain.Requests.Artists
 {
-    public class GetItemRequest
+    public class GetArtistRequest
     {
         public Guid Id { get; set; }
     }

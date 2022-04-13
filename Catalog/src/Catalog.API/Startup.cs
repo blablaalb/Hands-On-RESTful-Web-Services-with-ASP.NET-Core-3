@@ -7,6 +7,7 @@ using Catalog.Infrastructure;
 using Microsoft.Extensions.Hosting;
 using Catalog.Domain.Repositories;
 using Catalog.Domain.Extensions;
+using Catalog.Infrastructure.Repositories;
 
 namespace Catalog.API
 {
@@ -24,9 +25,9 @@ namespace Catalog.API
         {
             services
                 .AddCatalogContext(Configuration.GetSection("DataSource:ConnectionString").Value)
-                .AddScoped<IItemRepository, IItemRepository>()
+                .AddScoped<IItemRepository, ItemRepository>()
                 .AddMappers()
-                .AddSerfices()
+                .AddServices()
                 .AddControllers()
                 .AddValidation();
             services.AddControllers();

@@ -1,7 +1,7 @@
 ﻿using Catalog.Domain.Entities;
 using Catalog.Domain.Mappers;
 using Catalog.Domain.Repositories;
-using Catalog.Domain.Requests;
+using Catalog.Domain.Requests.Item;
 using Catalog.Domain.Services;
 using Catalog.Fixtures;
 using Catalog.Infrastructure.Repositories;

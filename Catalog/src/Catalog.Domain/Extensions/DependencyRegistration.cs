@@ -20,9 +20,12 @@ namespace Catalog.Domain.Extensions
             return services;
         }
 
-        public static IServiceCollection AddSerfices(this IServiceCollection services)
+        public static IServiceCollection AddServices(this IServiceCollection services)
         {
-            services.AddScoped<IItemService, ItemService>();
+            services
+                .AddScoped<IItemService, ItemService>()
+                .AddScoped<IGenreService, GenreService>()
+                .AddScoped<IArtistService, ArtistService>();
             return services;
         }
 
