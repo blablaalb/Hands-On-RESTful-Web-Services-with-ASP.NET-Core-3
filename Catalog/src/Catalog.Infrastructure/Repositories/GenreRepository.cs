@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Catalog.Infrastructure.Repositories
 {
-    internal class GenreRepository : IGenreRepository
+    public class GenreRepository : IGenreRepository
     {
         private readonly CatalogContext _catalogContext;
 
