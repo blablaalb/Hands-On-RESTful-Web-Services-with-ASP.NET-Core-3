@@ -1,4 +1,5 @@
-﻿using Catalog.Domain.Mappers;
+﻿using Catalog.Domain.Entities;
+using Catalog.Domain.Mappers;
 using Catalog.Domain.Repositories;
 using Catalog.Domain.Requests.Artists;
 using Catalog.Domain.Requests.Genre;
@@ -28,7 +29,7 @@ namespace Catalog.Domain.Services
 
         public async Task<GenreResponse> AddGenreAsync(AddGenreRequest request)
         {
-            var item = new Entities.Genre { GenreDescription = request.GenreDescription };
+            var item = new Genre { GenreDescription = request.GenreDescription };
             var result = _genreRepository.Add(item);
             await _genreRepository.UnitOfWork.SaveChangesAsync();
 

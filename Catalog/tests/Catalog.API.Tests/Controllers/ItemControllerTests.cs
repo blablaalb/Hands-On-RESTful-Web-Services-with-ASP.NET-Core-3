@@ -12,6 +12,7 @@ using System.Net.Http;
 using Catalog.API.Responses;
 using Catalog.Domain.Responses;
 using System.Linq;
+using System.Net;
 
 namespace Catalog.API.Tests.Controllers
 {
@@ -91,6 +92,25 @@ namespace Catalog.API.Tests.Controllers
             responseEntity.ArtistId.ShouldBe(request.ArtistId);
         }
 
+        [Theory]
+        [LoadData("item")]
+        public async Task Delete_Should_Return_No_Content_When_Called_With_Id(DeleteItemRequest request)
+        {
+            var client = _factory.CreateClient();
+            var response = await client.DeleteAsync($"/api/items/{request.Id}");
+            response.StatusCode.ShouldBe(HttpStatusCode.NoContent);
+        }
+
+        [Fact]
+        public async Task Delete_Should_Return_NotFound_When_Called_With_Not_Existing_Id()
+        {
+            var client=  _factory.CreateClient();
+            var response = await client.DeleteAsync($"/api/items/{Guid.NewGuid()}");
+
+            response.StatusCode.ShouldBe(HttpStatusCode.NotFound);
+        }
 
     }
+
+
 }

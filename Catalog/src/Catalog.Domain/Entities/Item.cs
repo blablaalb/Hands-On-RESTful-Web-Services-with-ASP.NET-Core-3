@@ -6,6 +6,7 @@ namespace Catalog.Domain.Entities
 {
     public class Item
     {
+        public bool IsInactive { get; set; }
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }

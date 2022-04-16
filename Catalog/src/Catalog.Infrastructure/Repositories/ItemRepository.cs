@@ -27,7 +27,7 @@ namespace Catalog.Infrastructure.Repositories
 
         public async Task<IEnumerable<Item>> GetAsync()
         {
-            return await _context.Items.AsNoTracking().ToListAsync();
+            return await _context.Items.Where(x => !x.IsInactive).AsNoTracking().ToListAsync();
         }
 
         public async Task<Item> GetAsync(Guid id)
@@ -56,13 +56,13 @@ namespace Catalog.Infrastructure.Repositories
 
         public async Task<IEnumerable<Item>> GetItemByArtistIdAsync(Guid id)
         {
-            var items = await _context.Items.Where(x => x.ArtistId == id).Include(x => x.Genre).Include(x => x.Artist).ToListAsync();
+            var items = await _context.Items.Where(x => !x.IsInactive).Where(x => x.ArtistId == id).Include(x => x.Genre).Include(x => x.Artist).ToListAsync();
             return items;
         }
 
         public async Task<IEnumerable<Item>> GetItemByGenreIdAsync(Guid id)
         {
-            var items = await _context.Items.Where(item => item.GenreId == id).Include(x => x.Genre).ToListAsync();
+            var items = await _context.Items.Where(x => !x.IsInactive).Where(item => item.GenreId == id).Include(x => x.Genre).ToListAsync();
             return items;
         }
     }

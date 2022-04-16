@@ -93,5 +93,15 @@ namespace Catalog.Infrastructure.Tests
             result.Price.Amount.ShouldBe(50);
         }
 
+        [Theory]
+        [InlineData("f5da5ce4-091e-492e-a70a-22b073d75a52")]
+        public async Task GetItems_Should_Not_Return_Inactive_Records(string id)
+        {
+            var result = await _sut.GetAsync();
+
+            result.Any(x => x.Id == new Guid(id)).ShouldBeFalse();
+        }
+
+
     }
 }
