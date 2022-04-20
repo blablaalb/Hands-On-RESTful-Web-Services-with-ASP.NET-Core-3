@@ -1,5 +1,8 @@
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Extensions.Hosting;
+using System.Net;
 
 namespace Catalog.API
 {
@@ -7,12 +10,18 @@ namespace Catalog.API
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) => Host.CreateDefaultBuilder(args).ConfigureWebHostDefaults(webBuilder =>
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args)
         {
-            webBuilder.UseStartup<Startup>();
-        });
+            return WebHost.CreateDefaultBuilder(args).ConfigureKestrel(options =>
+           {
+               options.Listen(IPAddress.Any, 5012, listenOptions =>
+               {
+                   listenOptions.Protocols = HttpProtocols.Http1AndHttp2;
+               });
+           }).UseStartup<Startup>();
+        }
     }
 }

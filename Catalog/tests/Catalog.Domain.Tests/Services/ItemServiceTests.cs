@@ -13,6 +13,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 using Xunit.Abstractions;
+using RabbitMQ.Client;
+using Catalog.Domain.Configurations;
+using Microsoft.Extensions.Logging.Abstractions;
 
 namespace Catalog.Domain.Tests.Services
 {
@@ -44,7 +47,7 @@ namespace Catalog.Domain.Tests.Services
                 ArtistId = new Guid("f08a333d-30db-4dd1-b8ba-3b0473c7cdab")
             };
 
-            IItemService sut = new ItemService(_itemRepository, _mapper);
+            IItemService sut = new ItemService(_itemRepository, _mapper, new ConnectionFactory(), new NullLogger<ItemService>(), new EventBusSettings());
 
             var result = await sut.AddItemAsync(testItem);
 
@@ -75,7 +78,7 @@ namespace Catalog.Domain.Tests.Services
                 ArtistId = new Guid("f08a333d-30db-4dd1-b8ba-3b0473c7cdab")
             };
 
-            ItemService sut = new ItemService(_itemRepository, _mapper);
+            IItemService sut = new ItemService(_itemRepository, _mapper, new ConnectionFactory(), new NullLogger<ItemService>(), new EventBusSettings());
             var result = await sut.EditItemAsync(testItem);
 
             result.Name.ShouldBe(testItem.Name);
@@ -89,7 +92,7 @@ namespace Catalog.Domain.Tests.Services
         [Fact]
         public async Task GetItems_Should_Return_Right_Data()
         {
-            ItemService sut = new ItemService(_itemRepository, _mapper);
+            IItemService sut = new ItemService(_itemRepository, _mapper, new ConnectionFactory(), new NullLogger<ItemService>(), new EventBusSettings());
 
             var result = await sut.GetItemsAsync();
 
@@ -100,7 +103,7 @@ namespace Catalog.Domain.Tests.Services
         [InlineData("b5b05534-9263-448c-a69e-0bbd8b3eb90e")]
         public async Task GetItem_Should_Return_Right_Data(string guid)
         {
-            ItemService sut = new ItemService(_itemRepository, _mapper);
+            IItemService sut = new ItemService(_itemRepository, _mapper, new ConnectionFactory(), new NullLogger<ItemService>(), new EventBusSettings());
 
             var result = await sut.GetItemAsync(new GetItemRequest { Id = new Guid(guid) });
             result.Id.ShouldBe(new Guid(guid));
@@ -109,7 +112,7 @@ namespace Catalog.Domain.Tests.Services
         [Fact]
         public void GetItem_Should_Throw_Exception_With_Null_Id()
         {
-            ItemService sut = new ItemService(_itemRepository, _mapper);
+            IItemService sut = new ItemService(_itemRepository, _mapper, new ConnectionFactory(), new NullLogger<ItemService>(), new EventBusSettings());
             sut.GetItemAsync(null).ShouldThrow<ArgumentNullException>();
         }
 
