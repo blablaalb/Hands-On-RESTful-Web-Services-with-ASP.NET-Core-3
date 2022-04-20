@@ -12,6 +12,8 @@ using RiskFirst.Hateoas;
 using Catalog.API.Responses;
 using Catalog.API.Controllers;
 using Catalog.API.Middleware;
+using Polly;
+using Catalog.Infrastructure.Extensions;
 
 namespace Catalog.API
 {
@@ -36,7 +38,7 @@ namespace Catalog.API
                 .AddServices()
                 .AddControllers()
                 .AddValidation();
-            services.AddControllers();
+            services.AddEventBus(Configuration);
 
             services.AddLinks(config =>
            config.AddPolicy<ItemHateoasResponse>(policy =>

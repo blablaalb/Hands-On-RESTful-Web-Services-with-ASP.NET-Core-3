@@ -7,6 +7,11 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using RabbitMQ.Client;
+using Microsoft.Extensions.Logging;
+using Catalog.Domain.Configurations;
+using Catalog.Domain.Events;
+using Newtonsoft.Json;
 
 namespace Catalog.Domain.Services
 {
@@ -14,11 +19,17 @@ namespace Catalog.Domain.Services
     {
         private readonly IItemRepository _itemRepository;
         private readonly IItemMapper _itemMapper;
+        private readonly ConnectionFactory _eventBusConnectionFactory;
+        private readonly ILogger<ItemService> _logger;
+        private readonly EventBusSettings _settings;
 
-        public ItemService(IItemRepository itemRepository, IItemMapper itemMapper)
+        public ItemService(IItemRepository itemRepository, IItemMapper itemMapper, ConnectionFactory eventBusConnectionFactory, ILogger<ItemService> logger, EventBusSettings settings)
         {
             this._itemRepository = itemRepository;
             this._itemMapper = itemMapper;
+            this._eventBusConnectionFactory = eventBusConnectionFactory;
+            this._logger = logger;
+            this._settings = settings;
         }
 
         public async Task<ItemResponse> AddItemAsync(AddItemRequest request)
@@ -67,6 +78,26 @@ namespace Catalog.Domain.Services
         {
             var result = await _itemRepository.GetAsync();
             return result.Select(x => _itemMapper.Map(x));
+        }
+
+        private void SendDeleteMessage(ItemSoldOutEvent message)
+        {
+            try
+            {
+                var connection = _eventBusConnectionFactory.CreateConnection();
+
+                using var channel = connection.CreateModel();
+                channel.QueueDeclare(queue: _settings.EventQueue, true, false);
+
+                var body = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(message));
+                channel.ConfirmSelect();
+                channel.BasicPublish(exchange: "", routingKey: _settings.EventQueue, body: body);
+                channel.WaitForConfirmsOrDie();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning("Unable to initialize the event bus: {message}", ex.Message);
+            }
         }
     }
 }
