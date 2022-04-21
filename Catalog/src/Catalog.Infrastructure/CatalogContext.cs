@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 using System.Threading;
 using Catalog.Domain.Entities;
 using Catalog.Infrastructure.SchemaDefinitions;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Catalog.Infrastructure
 {
-    public class CatalogContext : DbContext, IUnitOfWork
+    public class CatalogContext : IdentityDbContext<User>, IUnitOfWork
     {
         public const string DEFAULT_SCHEMA = "catalog";
         public DbSet<Item> Items { get; set; }

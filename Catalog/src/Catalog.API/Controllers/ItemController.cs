@@ -8,11 +8,13 @@ using Catalog.API.Filters;
 using Catalog.API.Responses;
 using System.Linq;
 using Catalog.Domain.Responses;
+using Microsoft.AspNetCore.Cors;
 
 namespace Catalog.API.Controllers
 {
     [Route("api/items")]
     [ApiController]
+    [JsonException]
     public class ItemController : ControllerBase
     {
         private readonly IItemService _itemService;

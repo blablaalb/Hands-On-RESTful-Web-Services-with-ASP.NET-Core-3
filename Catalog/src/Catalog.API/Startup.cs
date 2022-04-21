@@ -14,6 +14,7 @@ using Catalog.API.Controllers;
 using Catalog.API.Middleware;
 using Polly;
 using Catalog.Infrastructure.Extensions;
+using Catalog.Domain.Services;
 
 namespace Catalog.API
 {
@@ -34,23 +35,26 @@ namespace Catalog.API
                 .AddScoped<IItemRepository, ItemRepository>()
                 .AddScoped<IArtistRepository, ArtistRepository>()
                 .AddScoped<IGenreRepository, GenreRepository>()
+                .AddScoped<IUserRepository, UserRepository>()
+                .AddScoped<IUserService, UserService>()
                 .AddMappers()
                 .AddServices()
                 .AddControllers()
                 .AddValidation();
             services.AddEventBus(Configuration);
+            services.AddTokenAuthentication(Configuration);
 
             services.AddLinks(config =>
-           config.AddPolicy<ItemHateoasResponse>(policy =>
-           {
-               policy
-               .RequireRoutedLink(nameof(ItemsHateoasController.Get), nameof(ItemsHateoasController.Get))
-               .RequireRoutedLink(nameof(ItemsHateoasController.GetById), nameof(ItemsHateoasController.GetById), _ => new { id = _.Data.Id })
-               .RequireRoutedLink(nameof(ItemsHateoasController.Post), nameof(ItemsHateoasController.Post))
-               .RequireRoutedLink(nameof(ItemsHateoasController.Put), nameof(ItemsHateoasController.Put), x => new { id = x.Data.Id })
-               .RequireRoutedLink(nameof(ItemsHateoasController.Delete), nameof(ItemsHateoasController.Delete), x => new { id = x.Data.Id });
-           }
-           ));
+               config.AddPolicy<ItemHateoasResponse>(policy =>
+               {
+                   policy
+                   .RequireRoutedLink(nameof(ItemsHateoasController.Get), nameof(ItemsHateoasController.Get))
+                   .RequireRoutedLink(nameof(ItemsHateoasController.GetById), nameof(ItemsHateoasController.GetById), _ => new { id = _.Data.Id })
+                   .RequireRoutedLink(nameof(ItemsHateoasController.Post), nameof(ItemsHateoasController.Post))
+                   .RequireRoutedLink(nameof(ItemsHateoasController.Put), nameof(ItemsHateoasController.Put), x => new { id = x.Data.Id })
+                   .RequireRoutedLink(nameof(ItemsHateoasController.Delete), nameof(ItemsHateoasController.Delete), x => new { id = x.Data.Id });
+               }
+               ));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,9 +68,15 @@ namespace Catalog.API
             app.UseMiddleware<ResponseTimeMiddlewareAsync>();
             app.UseRouting();
             app.UseHttpsRedirection();
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+            app.UseCors(cfg =>
+            {
+                cfg.AllowAnyOrigin();
             });
         }
     }

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -22,6 +23,7 @@ namespace Catalog.Fixtures
                     .UseInMemoryDatabase(Guid.NewGuid().ToString()).Options;
 
                     services.AddScoped<CatalogContext>(serviceProvider => new TestCatalogContext(options));
+                    services.Replace(ServiceDescriptor.Scoped(_ => new UserContextFactory().InMemoryUserManager));
                     var sp = services.BuildServiceProvider();
 
                     using var scope = sp.CreateScope();
