@@ -23,6 +23,7 @@ namespace Cart.API.Controllers
         public async Task<IActionResult> GetById(Guid id)
         {
             var result = await _mediator.Send(new GetCartCommand { Id = id });
+            await _mediator.Publish(new TestCommand());
             return Ok(result);
         }
 

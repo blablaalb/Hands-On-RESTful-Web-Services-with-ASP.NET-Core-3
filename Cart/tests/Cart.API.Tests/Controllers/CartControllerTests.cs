@@ -8,16 +8,19 @@ using Cart.Fixtures;
 using Newtonsoft.Json;
 using Shouldly;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace Cart.API.Tests.Controllers
 {
     public class CartControllerTests : IClassFixture<CartApplicationFactory<Startup>>
     {
         private readonly CartApplicationFactory<Startup> _factory;
+        private readonly ITestOutputHelper _output;
 
-        public CartControllerTests(CartApplicationFactory<Startup> factory)
+        public CartControllerTests(CartApplicationFactory<Startup> factory, ITestOutputHelper output)
         {
             _factory = factory;
+            _output = output;   
         }
 
         [Theory]
@@ -41,6 +44,7 @@ namespace Cart.API.Tests.Controllers
 
             var responseContent = await response.Content.ReadAsStringAsync();
             var responseData = JsonConvert.DeserializeObject<CartExtendedResponse>(responseContent);
+
 
             responseData.Id.ShouldBe("9ced6bfa-9659-462e-aece-49fe50613e96");
             responseData.Items.Count.ShouldNotBeNull();
